@@ -1,0 +1,67 @@
+{
+    "mainInfo": [
+        {
+            "name": "Mary Gwen G. Susa",
+            "email": "gwenss@gmail.com",
+            "phone": "+6392101282003",
+            "website": "gwensusa.com",
+            "network": "linkedin.com/gwensusa",
+            "username": "_gwensusa",
+            "address": "1737 Marshville Road, Alabama"
+    
+        }
+    ],
+    "work": [
+        {
+            "company": "ABC Corporation",
+            "position": "Lead Software Architect",
+            "startDate": "March 2018",
+            "endDate": "2020",
+            "highlights": [
+              "- Analyzed, developed, implemented and maintained enterprise applications using SharePoint, BizTalk,",
+              "K2 BlackPearl, ASP.NET, C#, Web Services, Angular JS, ASP, XML, XSL, VB Script, Power builder,",
+              "Visual Basic, C, VC++, Access, oracle and other COTs applications.", 
+              "- Designed, developed, deployed and maintained several custom SharePoint solutions.", 
+              "- Advocated the use of SharePoint development best practices, methodologies and procedures for",
+              "delivery.",
+              "- Conducted several SharePoint training sessions targeting Business users, developers and",
+              "administrators.",
+              "- Created SharePoint COE and manage SharePoint governance board processes, and procedures.",
+              "- Planned, Designed and Implemented Extranet and Intranet facing SharePoint Server sites.",
+              "- Designed, developed, implemented and maintained several workflow applications using K2.NET, K2",
+              "Black Pearl, MOSS and InfoPath."
+            ]            
+        }
+    ],
+    "work2": [
+        {
+            "company": "Delta Corporation",
+            "highlights": [
+              "- Lead and develop security software products Design freeware and commercial software online",
+              "and utilized by thousands of consumers world-wide Coded.",
+              "- Optimized and developed the following web applications using C#.Net and SQL Server Database",
+              "and SSIS o employerpartnership.org US Army-Employer.",
+              "- Utilized MVC ASP.NET Framework, Test-Driven Development (TDD), SVN Source Control and Cruise", 
+              "Control Build Systems.",
+              "- Maintained and enhance existing public website and internal web applications using C#.Net",
+              "MVC Framework for C# &amp; SQL Server with ORM Database Mapping.",
+              "- Analyzed business requirements and provided architecture solutions based upon changing business",
+              "requirements.",
+              "- Developed cloud computing integrations using Salesforce.com CRM and Google APIs along with C#.Net.",
+              "- Lead architect responsible for technical oversight and technical delivery of core investment",
+              "product."
+            ]            
+        }
+    ],
+    "skills": [
+        {
+            "keywords": "MVC, C#, AngularJS, Oracle Database, SQL Server, Project Management, CSS3, JQuery."
+        }
+    ],
+    "summary": [
+            "Highly motivated and self-disciplined with expertise spanning over 10 years of computer software",
+            "development security solutions, with the ability in thinking both analytically and abstractly. Versatile as an",
+            "effective team player as well as individually with organizational skills within designated time parameters to",
+            "meet project deadlines."
+    ]     
+}
