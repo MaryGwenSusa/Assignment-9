@@ -94,3 +94,11 @@ def jsonPart():
     susaPDF.cell(200, 6, str(data["summary"][1]), ln = 1, align = 'L')
     susaPDF.cell(200, 6, str(data["summary"][2]), ln = 1, align = 'L')
     susaPDF.cell(200, 6, str(data["summary"][3]), ln = 1, align = 'L')
+
+
+layout() 
+jsonPart()
+# saves the coded pdf with the help of the module
+susaPDF.output('SUSA_MARY GWEN.pdf')
+# opens the file with a preset browser settled as default on the Microsoft properties
+access.startfile('SUSA_MARY GWEN.pdf')
