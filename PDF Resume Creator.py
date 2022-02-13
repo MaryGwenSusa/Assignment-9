@@ -2,6 +2,7 @@ import os as access; from fpdf import FPDF; import json
 # import OS to interact with the Microsoft Windows default settings
 # fpdf module to generate pdf
 
+rep = 0
 data = open("resume.json")
 data = json.load(data) # read the json file
 susaPDF = FPDF('P', 'mm', 'Legal') # orientation, measure, size of page; set up the pdf
@@ -48,39 +49,19 @@ def jsonPart():
     susaPDF.set_font("courier", "I", 16)
     susaPDF.cell(200, 6, str(data["work"][0]["position"]), ln = 1, align = 'L')
 
+
     susaPDF.set_font("helvetica", "", 12)
     susaPDF.cell(200, 6, str(data["work"][0]["startDate"]) + '-' + str(data["work"][0]["endDate"]), ln = 1, align = 'L')
-    susaPDF.cell(200, 6, str(data["work"][0]["highlights"][0]), ln = 1, align = 'L')
-    susaPDF.cell(200, 6, str(data["work"][0]["highlights"][1]), ln = 1, align = 'L')
-    susaPDF.cell(200, 6, str(data["work"][0]["highlights"][2]), ln = 1, align = 'L')
-    susaPDF.cell(200, 6, str(data["work"][0]["highlights"][3]), ln = 1, align = 'L')
-    susaPDF.cell(200, 6, str(data["work"][0]["highlights"][4]), ln = 1, align = 'L')
-    susaPDF.cell(200, 6, str(data["work"][0]["highlights"][5]), ln = 1, align = 'L')
-    susaPDF.cell(200, 6, str(data["work"][0]["highlights"][6]), ln = 1, align = 'L')
-    susaPDF.cell(200, 6, str(data["work"][0]["highlights"][7]), ln = 1, align = 'L')
-    susaPDF.cell(200, 6, str(data["work"][0]["highlights"][8]), ln = 1, align = 'L')
-    susaPDF.cell(200, 6, str(data["work"][0]["highlights"][9]), ln = 1, align = 'L')
-    susaPDF.cell(200, 6, str(data["work"][0]["highlights"][10]), ln = 1, align = 'L')
-    susaPDF.cell(200, 6, str(data["work"][0]["highlights"][11]), ln = 1, align = 'L')
+    for i in range(11):
+        susaPDF.cell(200, 6, str(data["work"][0]["highlights"][i]), ln = 1, align = 'L')
     susaPDF.ln(10)
 
     susaPDF.set_font("courier", "B", 16)
     susaPDF.cell(200, 6, str(data["work2"][0]["company"]), ln = 1, align = 'L')
 
     susaPDF.set_font("helvetica", "", 12)
-    susaPDF.cell(200, 6, str(data["work2"][0]["highlights"][0]), ln = 1, align = 'L')
-    susaPDF.cell(200, 6, str(data["work2"][0]["highlights"][1]), ln = 1, align = 'L')
-    susaPDF.cell(200, 6, str(data["work2"][0]["highlights"][2]), ln = 1, align = 'L')
-    susaPDF.cell(200, 6, str(data["work2"][0]["highlights"][3]), ln = 1, align = 'L')
-    susaPDF.cell(200, 6, str(data["work2"][0]["highlights"][4]), ln = 1, align = 'L')
-    susaPDF.cell(200, 6, str(data["work2"][0]["highlights"][5]), ln = 1, align = 'L')
-    susaPDF.cell(200, 6, str(data["work2"][0]["highlights"][6]), ln = 1, align = 'L')
-    susaPDF.cell(200, 6, str(data["work2"][0]["highlights"][7]), ln = 1, align = 'L')
-    susaPDF.cell(200, 6, str(data["work2"][0]["highlights"][8]), ln = 1, align = 'L')
-    susaPDF.cell(200, 6, str(data["work2"][0]["highlights"][9]), ln = 1, align = 'L')
-    susaPDF.cell(200, 6, str(data["work2"][0]["highlights"][10]), ln = 1, align = 'L')
-    susaPDF.cell(200, 6, str(data["work2"][0]["highlights"][11]), ln = 1, align = 'L')
-    susaPDF.cell(200, 6, str(data["work2"][0]["highlights"][12]), ln = 1, align = 'L')
+    for i in range(12):
+        susaPDF.cell(200, 6, str(data["work2"][0]["highlights"][i]), ln = 1, align = 'L')
     susaPDF.ln(7)
     
     susaPDF.set_font("helvetica", "B", 12)
